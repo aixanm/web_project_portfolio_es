@@ -3,24 +3,31 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tu Nombre — Portafolio</title>
+    <title>Aixa Molina — Portafolio</title>
+    <link rel="stylesheet" href="./fonts/fonts.css" />
     <link rel="stylesheet" href="./index.css" />
   </head>
   <body>
     <header class="profile">
       <div class="profile__info">
-        <h1 class="profile__name">Tu Nombre Aquí</h1>
+        <h1 class="profile__name">Aixa Nathaly Molina Méndez</h1>
         <p class="profile__bio">
-          Aquí va tu descripción corta, copiada del diseño.
+          Desarrolladora web en formación, actualmente construyendo mis
+          habilidades en HTML, CSS y diseño responsivo. Disfruto convertir ideas
+          en interfaces funcionales y con buen ojo para el detalle visual.
         </p>
         <div class="profile__links">
-          <a href="#" class="profile__link">Descargar CV</a>
-          <a href="#" class="profile__link">Enlace a GitHub</a>
+          <a
+            href="https://github.com/aixanm"
+            class="profile__link"
+            target="_blank"
+            >Enlace a GitHub</a
+          >
         </div>
       </div>
       <img
         src="./images/profile-photo.jpg"
-        alt="Foto de perfil"
+        alt="Foto de perfil de Aixa Molina"
         class="profile__photo"
       />
     </header>
@@ -28,7 +35,28 @@
     <section class="skills">
       <h2 class="skills__title">Habilidades y herramientas</h2>
       <div class="skills__icons">
-        <!-- Aquí van los iconos: HTML, CSS, JS, Git, GitHub, etc -->
+        <img
+          src="./images/icons/icon-html.svg"
+          alt="HTML"
+          class="skills__icon"
+        />
+        <img src="./images/icons/icon-css.svg" alt="CSS" class="skills__icon" />
+        <img
+          src="./images/icons/icon-js.svg"
+          alt="JavaScript"
+          class="skills__icon"
+        />
+        <img src="./images/icons/icon-git.svg" alt="Git" class="skills__icon" />
+        <img
+          src="./images/icons/icon-github.svg"
+          alt="GitHub"
+          class="skills__icon"
+        />
+        <img
+          src="./images/icons/icon-chatgpt.svg"
+          alt="ChatGPT"
+          class="skills__icon"
+        />
       </div>
     </section>
 
@@ -36,31 +64,67 @@
       <h2 class="projects__title">Proyectos destacados</h2>
       <div class="projects__list">
         <article class="project-card">
-          <img
-            src="./images/project-1.jpg"
-            alt="Página web de una cafetería"
-            class="project-card__image"
-          />
+          <div class="project-card__image-wrapper">
+            <img
+              src="./images/project-1.jpg"
+              alt="Página web de una cafetería"
+              class="project-card__image"
+            />
+            <div class="project-card__overlay"></div>
+          </div>
           <h3 class="project-card__title">Página web de una cafetería</h3>
-          <p class="project-card__description">Descripción del proyecto.</p>
+          <p class="project-card__description">
+            Landing page responsiva para una cafetería, con flexbox,
+            posicionamiento y validación W3C.
+          </p>
         </article>
 
         <article class="project-card">
-          <img
-            src="./images/project-2.jpg"
-            alt="Mi proyecto"
-            class="project-card__image"
-          />
+          <div class="project-card__image-wrapper">
+            <img
+              src="./images/project-2.jpg"
+              alt="Mi proyecto de portafolio"
+              class="project-card__image"
+            />
+            <div class="project-card__overlay"></div>
+          </div>
           <h3 class="project-card__title">Mi proyecto</h3>
-          <p class="project-card__description">Descripción del proyecto.</p>
+          <p class="project-card__description">
+            Este mismo sitio de portafolio, construido desde cero con HTML y CSS
+            responsivo.
+          </p>
         </article>
       </div>
     </section>
-
     <footer class="contact">
       <h2 class="contact__title">Contacto</h2>
       <div class="contact__icons">
-        <!-- Aquí van los iconos de redes sociales -->
+        <a
+          href="https://www.linkedin.com/in/aixa-molina-34b9b93a7/"
+          target="_blank"
+          ><img
+            src="./images/icons/icon-linkedin.svg"
+            alt="LinkedIn"
+            class="contact__icon"
+        /></a>
+        <a href="https://www.instagram.com/aixanm" target="_blank"
+          ><img
+            src="./images/icons/icon-instagram.svg"
+            alt="Instagram"
+            class="contact__icon"
+        /></a>
+        <a href="https://x.com/aixanm" target="_blank"
+          ><img
+            src="./images/icons/icon-x.svg"
+            alt="X (Twitter)"
+            class="contact__icon"
+        /></a>
+        <a href="https://www.facebook.com/aixa.molina.75" target="_blank"
+          ><img
+            src="./images/icons/icon-facebook.svg"
+            alt="Facebook"
+            class="contact__icon"
+        /></a>
       </div>
     </footer>
   </body>

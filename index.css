@@ -1,0 +1,244 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #1e1e1e;
+  color: #ffffff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  background-image:
+    radial-gradient(
+      circle at calc(50% - 400px) 0%,
+      rgba(109, 109, 255, 0.25),
+      transparent 40%
+    ),
+    radial-gradient(
+      circle at calc(50% + 500px) 300px,
+      rgba(88, 196, 220, 0.2),
+      transparent 40%
+    );
+  background-repeat: no-repeat;
+}
+
+a {
+  color: #6d6dff;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Perfil */
+.profile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 20px;
+}
+
+.profile__info {
+  max-width: 500px;
+}
+
+.profile__name {
+  font-family: "Archivo Black", sans-serif;
+  font-size: 48px;
+  line-height: 1.2;
+  margin-bottom: 16px;
+}
+
+.profile__bio {
+  font-size: 18px;
+  margin-bottom: 24px;
+  color: #ffffff;
+}
+
+.profile__links {
+  display: flex;
+  gap: 20px;
+}
+
+.profile__photo {
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+/* Habilidades */
+.skills {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.skills__title {
+  font-family: "Archivo Black", sans-serif;
+  font-size: 40px;
+  margin-bottom: 24px;
+}
+
+.skills__icons {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.skills__icon {
+  width: 48px;
+  height: 48px;
+}
+
+/* Proyectos */
+.projects {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.projects__title {
+  font-family: "Archivo Black", sans-serif;
+  font-size: 40px;
+  margin-bottom: 24px;
+}
+
+.projects__list {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.project-card {
+  flex: 1;
+  min-width: 300px;
+  background-color: #2a2a2a;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.project-card__image-wrapper {
+  position: relative;
+}
+
+.project-card__image {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  object-position: left center;
+}
+
+.project-card__overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
+  pointer-events: none;
+}
+
+.project-card__title {
+  font-size: 18px;
+  margin: 16px 16px 8px;
+}
+
+.project-card__description {
+  font-size: 14px;
+  color: #cccccc;
+  margin: 0 16px 16px;
+}
+
+/* Contacto */
+.contact {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px 80px;
+  text-align: center;
+}
+
+.contact__title {
+  font-family: "Archivo Black", sans-serif;
+  font-size: 40px;
+  margin-bottom: 24px;
+}
+
+.contact__icons {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+.contact__icon {
+  width: 28px;
+  height: 28px;
+}
+
+/* Tablet */
+@media screen and (max-width: 1023px) {
+  .profile {
+    padding: 60px 20px;
+  }
+
+  .profile__name {
+    font-size: 36px;
+  }
+
+  .profile__photo {
+    width: 200px;
+    height: 200px;
+  }
+
+  .skills__title,
+  .projects__title,
+  .contact__title {
+    font-size: 32px;
+  }
+
+  .projects__list {
+    flex-direction: column;
+  }
+}
+
+/* Móvil */
+@media screen and (max-width: 767px) {
+  .profile {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 20px;
+  }
+
+  .profile__info {
+    max-width: 100%;
+    order: 2;
+  }
+
+  .profile__photo {
+    width: 160px;
+    height: 160px;
+    order: 1;
+  }
+
+  .profile__links {
+    justify-content: center;
+  }
+
+  .profile__name {
+    font-size: 28px;
+  }
+
+  .skills__title,
+  .projects__title,
+  .contact__title {
+    font-size: 24px;
+  }
+}
