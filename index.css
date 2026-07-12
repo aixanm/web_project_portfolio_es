@@ -67,6 +67,16 @@ img {
   gap: 20px;
 }
 
+.profile__link {
+  display: inline-block;
+  font-weight: 600;
+  padding-bottom: 6px;
+  background-image: linear-gradient(to right, #6d6dff, #58c4dc);
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  background-size: 100% 3px;
+}
+
 .profile__photo {
   width: 280px;
   height: 280px;
