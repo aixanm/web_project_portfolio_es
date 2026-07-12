@@ -34,6 +34,11 @@ img {
   display: block;
 }
 
+ul,
+li {
+  list-style: none;
+}
+
 /* Perfil */
 .profile {
   display: flex;
@@ -75,6 +80,11 @@ img {
   background-repeat: no-repeat;
   background-position: bottom left;
   background-size: 100% 3px;
+  transition: opacity 0.2s ease;
+}
+
+.profile__link:hover {
+  opacity: 0.75;
 }
 
 .profile__photo {
@@ -107,6 +117,11 @@ img {
 .skills__icon {
   width: 48px;
   height: 48px;
+  transition: transform 0.2s ease;
+}
+
+.skills__icon:hover {
+  transform: translateY(-4px);
 }
 
 /* Proyectos */
@@ -134,6 +149,11 @@ img {
   background-color: #2a2a2a;
   border-radius: 12px;
   overflow: hidden;
+  transition: transform 0.2s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
 }
 
 .project-card__image-wrapper {
@@ -191,6 +211,11 @@ img {
 .contact__icon {
   width: 28px;
   height: 28px;
+  transition: opacity 0.2s ease;
+}
+
+.contact__icon:hover {
+  opacity: 0.7;
 }
 
 /* Tablet */

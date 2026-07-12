@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Aixa Molina — Portafolio</title>
     <link rel="stylesheet" href="./fonts/fonts.css" />
-    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="./styles/index.css" />
   </head>
   <body>
     <header class="profile">
@@ -39,105 +39,124 @@
       />
     </header>
 
-    <section class="skills">
-      <h2 class="skills__title">Habilidades y herramientas</h2>
-      <div class="skills__icons">
-        <img
-          src="./images/icons/icon-html.svg"
-          alt="HTML"
-          class="skills__icon"
-        />
-        <img src="./images/icons/icon-css.svg" alt="CSS" class="skills__icon" />
-        <img
-          src="./images/icons/icon-js.svg"
-          alt="JavaScript"
-          class="skills__icon"
-        />
-        <img src="./images/icons/icon-git.svg" alt="Git" class="skills__icon" />
-        <img
-          src="./images/icons/icon-github.svg"
-          alt="GitHub"
-          class="skills__icon"
-        />
-        <img
-          src="./images/icons/icon-chatgpt.svg"
-          alt="ChatGPT"
-          class="skills__icon"
-        />
-      </div>
-    </section>
+    <main>
+      <section class="skills">
+        <h2 class="skills__title">Habilidades y herramientas</h2>
+        <div class="skills__icons">
+          <img
+            src="./images/icons/icon-html.svg"
+            alt="HTML"
+            class="skills__icon"
+          />
+          <img
+            src="./images/icons/icon-css.svg"
+            alt="CSS"
+            class="skills__icon"
+          />
+          <img
+            src="./images/icons/icon-js.svg"
+            alt="JavaScript"
+            class="skills__icon"
+          />
+          <img
+            src="./images/icons/icon-git.svg"
+            alt="Git"
+            class="skills__icon"
+          />
+          <img
+            src="./images/icons/icon-github.svg"
+            alt="GitHub"
+            class="skills__icon"
+          />
+          <img
+            src="./images/icons/icon-chatgpt.svg"
+            alt="ChatGPT"
+            class="skills__icon"
+          />
+        </div>
+      </section>
 
-    <section class="projects">
-      <h2 class="projects__title">Proyectos destacados</h2>
-      <div class="projects__list">
-        <article class="project-card">
-          <div class="project-card__image-wrapper">
-            <img
-              src="./images/project-1.jpg"
-              alt="Página web de una cafetería"
-              class="project-card__image"
-            />
-            <div class="project-card__overlay"></div>
-          </div>
-          <h3 class="project-card__title">Página web de una cafetería</h3>
-          <p class="project-card__description">
-            Landing page responsiva para una cafetería, con flexbox,
-            posicionamiento y validación W3C.
-          </p>
-        </article>
+      <section class="projects">
+        <h2 class="projects__title">Proyectos destacados</h2>
+        <ul class="projects__list">
+          <li class="project-card">
+            <div class="project-card__image-wrapper">
+              <img
+                src="./images/project-1.jpg"
+                alt="Página web de una cafetería"
+                class="project-card__image"
+              />
+              <div class="project-card__overlay"></div>
+            </div>
+            <h3 class="project-card__title">Página web de una cafetería</h3>
+            <p class="project-card__description">
+              Landing page responsiva para una cafetería, con flexbox,
+              posicionamiento y validación W3C.
+            </p>
+          </li>
 
-        <article class="project-card">
-          <div class="project-card__image-wrapper">
-            <img
-              src="./images/project-2.jpg"
-              alt="Mi proyecto de portafolio"
-              class="project-card__image"
-            />
-            <div class="project-card__overlay"></div>
-          </div>
-          <h3 class="project-card__title">Mi proyecto</h3>
-          <p class="project-card__description">
-            Este mismo sitio de portafolio, construido desde cero con HTML y CSS
-            responsivo.
-          </p>
-        </article>
-      </div>
-    </section>
+          <li class="project-card">
+            <div class="project-card__image-wrapper">
+              <img
+                src="./images/project-2.jpg"
+                alt="Mi proyecto de portafolio"
+                class="project-card__image"
+              />
+              <div class="project-card__overlay"></div>
+            </div>
+            <h3 class="project-card__title">Mi proyecto</h3>
+            <p class="project-card__description">
+              Este mismo sitio de portafolio, construido desde cero con HTML y
+              CSS responsivo.
+            </p>
+          </li>
+        </ul>
+      </section>
+    </main>
+
     <footer class="contact">
       <h2 class="contact__title">Contacto</h2>
-      <div class="contact__icons">
-        <a
-          href="https://www.linkedin.com/in/aixa-molina-34b9b93a7/"
-          target="_blank"
-        >
-          <img
-            src="./images/icons/icon-linkedin.svg"
-            alt="LinkedIn"
-            class="contact__icon"
-          />
-        </a>
-        <a href="https://www.instagram.com/aixanm" target="_blank">
-          <img
-            src="./images/icons/icon-instagram.svg"
-            alt="Instagram"
-            class="contact__icon"
-          />
-        </a>
-        <a href="https://x.com/aixanm" target="_blank">
-          <img
-            src="./images/icons/icon-x.svg"
-            alt="X (Twitter)"
-            class="contact__icon"
-          />
-        </a>
-        <a href="https://www.facebook.com/aixa.molina.75" target="_blank">
-          <img
-            src="./images/icons/icon-facebook.svg"
-            alt="Facebook"
-            class="contact__icon"
-          />
-        </a>
-      </div>
+      <ul class="contact__icons">
+        <li>
+          <a
+            href="https://www.linkedin.com/in/aixa-molina-34b9b93a7/"
+            target="_blank"
+          >
+            <img
+              src="./images/icons/icon-linkedin.svg"
+              alt="LinkedIn"
+              class="contact__icon"
+            />
+          </a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/aixanm" target="_blank">
+            <img
+              src="./images/icons/icon-instagram.svg"
+              alt="Instagram"
+              class="contact__icon"
+            />
+          </a>
+        </li>
+        <li>
+          <a href="https://x.com/aixanm" target="_blank">
+            <img
+              src="./images/icons/icon-x.svg"
+              alt="X (Twitter)"
+              class="contact__icon"
+            />
+          </a>
+        </li>
+        <li>
+          <a href="https://www.facebook.com/aixa.molina.75" target="_blank">
+            <img
+              src="./images/icons/icon-facebook.svg"
+              alt="Facebook"
+              class="contact__icon"
+            />
+          </a>
+        </li>
+      </ul>
     </footer>
   </body>
 </html>
